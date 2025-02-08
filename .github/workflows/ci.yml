@@ -45,8 +45,7 @@ jobs:
           record: true
           parallel: true
         env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}        
-
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }} 
   deploy:
     runs-on: ubuntu-latest
     needs: cypresss-run
